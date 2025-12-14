@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Demo - Beauty Products E-Commerce</title>
+<style>
+    body { font-family: 'Segoe UI', sans-serif; margin:0; padding:0; background:#f4f4f4; color:#333; }
+    header { background:#6366f1; color:white; padding:2rem; text-align:center; }
+    header h1 { margin-bottom:0.5rem; }
+    header p { margin-top:0; opacity:0.9; }
+    section { max-width:900px; margin:2rem auto; padding:1rem; background:white; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1);}
+    h2 { margin-top:0; color:#6366f1; }
+    .project-video { width:100%; max-width:800px; margin:1rem 0; }
+    .project-details { margin:1rem 0; }
+    .tech-stack { margin:1rem 0; }
+    .tech-tag { display:inline-block; margin:0.3rem; padding:0.3rem 0.7rem; background:#e0e7ff; color:#4f46e5; border-radius:5px; font-size:0.9rem; }
+    .links a { margin-right:1rem; text-decoration:none; color:white; background:#6366f1; padding:0.5rem 1rem; border-radius:5px; transition:0.3s;}
+    .links a:hover { background:#4f46e5; }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Beauty Products E-Commerce</h1>
+    <p>Full-stack Web Application Demo</p>
+</header>
+
+<section>
+    <h2>Live Demo</h2>
+    <div class="links">
+        <a href="https://your-live-demo-link.com" target="_blank">View Live Demo</a>
+        <a href="https://github.com/Wanqi0225/BeautyProductsEcommerce" target="_blank">GitHub Repo</a>
+    </div>
+</section>
+
+<section>
+    <h2>Project Video</h2>
+    <video class="project-video" controls>
+        <source src="demo-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+<section>
+    <h2>Project Details</h2>
+    <div class="project-details">
+        <p>This project is a full-featured e-commerce web application for beauty products. Users can browse products, add them to the cart, and simulate checkout. The admin panel allows product management and order tracking.</p>
+        <p>The main goals of this project are to demonstrate:</p>
+        <ul>
+            <li>Full-stack development using Java, JSP, and MySQL</li>
+            <li>Responsive web design for desktop and mobile</li>
+            <li>Database integration with JPA</li>
+            <li>Clean and maintainable code structure</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Tech Stack</h2>
+    <div class="tech-stack">
+        <span class="tech-tag">Java</span>
+        <span class="tech-tag">JSP</span>
+        <span class="tech-tag">MySQL</span>
+        <span class="tech-tag">GlassFish</span>
+        <span class="tech-tag">JPA</span>
+        <span class="tech-tag">HTML/CSS/JS</span>
+    </div>
+</section>
+
+<section>
+    <h2>How to Run Locally</h2>
+    <p>Clone the repository, open in NetBeans, build with Ant, and deploy on GlassFish:</p>
+    <pre>
+git clone https://github.com/Wanqi0225/BeautyProductsEcommerce.git
+Open build.xml in NetBeans
+Clean & Build
+Deploy to GlassFish
+    </pre>
+</section>
+
+<footer style="text-align:center; padding:2rem; margin-top:2rem; color:#777;">
+    © 2025 Chia Wan Chee
+</footer>
+
+</body>
+</html>
