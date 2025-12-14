@@ -5,13 +5,67 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Project Demo - Beauty Products E-Commerce</title>
 <style>
+    :root {
+            --primary: #6366f1;
+            --secondary: #8b5cf6;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --text: #334155;
+            --accent: #ec4899;
+        }
+
+     /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo > a {
+            font-size: 1.5rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
     body { font-family: 'Segoe UI', sans-serif; margin:0; padding:0; background:#f4f4f4; color:#333; }
-    header { background:#6366f1; color:white; padding:2rem; text-align:center; }
+    header { background:#6366f1; color:white; padding:2rem; text-align:center; margin-top: 60px;}
     header h1 { margin-bottom:0.5rem; }
     header p { margin-top:0; opacity:0.9; }
     section { max-width:900px; margin:2rem auto; padding:1rem; background:white; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1);}
     h2 { margin-top:0; color:#6366f1; }
-    .project-video { width:100%; max-width:800px; margin:1rem 0; }
+    .project-video { width:100%; max-width:800px; margin:1rem auto; display:block }
     .project-details { margin:1rem 0; }
     .tech-stack { margin:1rem 0; }
     .tech-tag { display:inline-block; margin:0.3rem; padding:0.3rem 0.7rem; background:#e0e7ff; color:#4f46e5; border-radius:5px; font-size:0.9rem; }
@@ -20,6 +74,12 @@
 </style>
 </head>
 <body>
+<!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo"><a href="../index.html">Chia Wan Chee</a></div>
+        </div>
+    </nav>
 
 <header>
     <h1>Beauty Products E-Commerce</h1>
@@ -27,33 +87,53 @@
 </header>
 
 <section>
-    <h2>Live Demo</h2>
-    <div class="links">
-        <a href="https://your-live-demo-link.com" target="_blank">View Live Demo</a>
-        <a href="https://github.com/Wanqi0225/BeautyProductsEcommerce" target="_blank">GitHub Repo</a>
+    <h2>Project Description</h2>
+    <div class="project-details">
+        <p>This is a beauty products e-commerce website developed as part of my <b>Diploma assignment</b> while learning the <b>MVC architecture</b>. The website allows users to browse products, search, register, login, manage their profiles, and place orders.</p>
+    </div>
+</section>
+
+<section>
+    <h2>My Responsibilities</h2>
+    <div class="project-details">
+        <ul>
+            <li><b>Homepage:</b> Designed layout and product display.</li>
+            <li><b>Search Page:</b> Implemented product search functionality using Java and JSP.</li>
+            <li><b>Login & Register:</b> Developed user authentication system.</li>
+            <li><b>User Profile:</b> Implemented “My Account” page with profile details and logout functionality.</li>
+        </ul>
     </div>
 </section>
 
 <section>
     <h2>Project Video</h2>
+    <h3>Home Page</h3>
+    <p>The homepage features an <b>auto-sliding banner</b> at the top to showcase promotions. Below, users can <b>browse featured products</b>. At the bottom, a shark button allows users to quickly <b>scroll back to the top</b> for easy navigation.</p>
     <video class="project-video" controls>
-        <source src="demo-video.mp4" type="video/mp4">
+        <source src="../videos/homepage-demo.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-</section>
 
-<section>
-    <h2>Project Details</h2>
-    <div class="project-details">
-        <p>This project is a full-featured e-commerce web application for beauty products. Users can browse products, add them to the cart, and simulate checkout. The admin panel allows product management and order tracking.</p>
-        <p>The main goals of this project are to demonstrate:</p>
-        <ul>
-            <li>Full-stack development using Java, JSP, and MySQL</li>
-            <li>Responsive web design for desktop and mobile</li>
-            <li>Database integration with JPA</li>
-            <li>Clean and maintainable code structure</li>
-        </ul>
-    </div>
+    <h3>Search Page</h3>
+    <p>Users can search for products directly through the navigation bar. If no matching products are found, a ‘No Results Found’ message is displayed to inform the user.</p>
+    <video class="project-video" controls>
+        <source src="../videos/searchpage-demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h3>Login & Register</h3>
+    <p>Users can <b>create a new account</b> through the registration page and <b>log</b> in with their credentials. The system ensures secure authentication before accessing user-specific features.</p>
+    <video class="project-video" controls>
+        <source src="../videos/loginnregister-demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h3>User Profile</h3>
+    <p>Users can <b>view and update</b> their personal information, change their password, and securely log out of their account.</p>
+    <video class="project-video" controls>
+        <source src="../videos/loginnregister-demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 </section>
 
 <section>
@@ -62,21 +142,19 @@
         <span class="tech-tag">Java</span>
         <span class="tech-tag">JSP</span>
         <span class="tech-tag">MySQL</span>
+        <span class="tech-tag">JDBC</span>
         <span class="tech-tag">GlassFish</span>
-        <span class="tech-tag">JPA</span>
         <span class="tech-tag">HTML/CSS/JS</span>
+        <span class="tech-tag">Servlets</span>
+        <span class="tech-tag">Netbeans IDE</span>
     </div>
 </section>
 
 <section>
-    <h2>How to Run Locally</h2>
-    <p>Clone the repository, open in NetBeans, build with Ant, and deploy on GlassFish:</p>
-    <pre>
-git clone https://github.com/Wanqi0225/BeautyProductsEcommerce.git
-Open build.xml in NetBeans
-Clean & Build
-Deploy to GlassFish
-    </pre>
+    <h2>GitHub Link</h2>
+    <div class="links">
+        <a href="https://github.com/Wanqi0225/BeautyProductsEcommerce" target="_blank">GitHub Repo</a>
+    </div>
 </section>
 
 <footer style="text-align:center; padding:2rem; margin-top:2rem; color:#777;">
