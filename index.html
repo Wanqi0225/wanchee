@@ -48,7 +48,7 @@
             align-items: center;
         }
 
-        nav .logo {
+        nav .logo > a {
             font-size: 1.5rem;
             font-weight: bold;
             background: linear-gradient(135deg, var(--primary), var(--secondary));
@@ -140,7 +140,7 @@
         }
 
         /* Section Styles */
-        section {
+        .container {
             padding: 5rem 2rem;
             max-width: 1200px;
             margin: 0 auto;
@@ -357,7 +357,7 @@
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <div class="logo">Chia Wan Chee</div>
+            <div class="logo"><a href="../index.html">Chia Wan Chee</a></div>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -368,7 +368,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="about">
         <div>
             <h1>Hi, I'm Chia Wan Chee</h1>
             <p>Frontend Developer</p>
@@ -380,7 +380,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" class="container">
         <h2>Featured Projects</h2>
         <div class="projects-grid">
             
@@ -390,17 +390,20 @@
                 <div class="project-content">
                     <div class="project-type">FULL-STACK WEB APPLICATION</div>
                     <h3>Beauty Products E-Commerce</h3>
-                    <p>A comprehensive e-commerce platform for beauty products with shopping cart, order management, and payment processing.</p>
+                    <p>A comprehensive e-commerce platform for beauty products that allows users to browse products, search, register, login, manage their profiles, and place orders.</p>
                     <div class="tech-stack">
                         <span class="tech-tag">Java</span>
                         <span class="tech-tag">JSP</span>
                         <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">JDBC</span>
                         <span class="tech-tag">GlassFish</span>
-                        <span class="tech-tag">JPA</span>
+                        <span class="tech-tag">HTML/CSS/JS</span>
+                        <span class="tech-tag">Servlets</span>
+                        <span class="tech-tag">Netbeans IDE</span>
                     </div>
                     <div class="project-links">
                         <a href="projects/beauty-ecommerce.html">Live Demo →</a>
-                        <a href="https://github.com/Wanqi0225/BeautyProductsEcommerce">GitHub →</a>
+                        <a href="https://github.com/Wanqi0225/BeautyProductsEcommerce" target="_blank">GitHub →</a>
                     </div>
                 </div>
             </div>
@@ -410,16 +413,17 @@
                 <div class="project-image">🏢</div>
                 <div class="project-content">
                     <div class="project-type">INTERNSHIP PROJECT</div>
-                    <h3>Company Dashboard</h3>
-                    <p>Developed frontend features for internal company dashboard during internship at [Company Name].</p>
+                    <h3>Studio 20</h3>
+                    <p>This page showcases some of the projects I worked on during my internship. Most of them are WordPress-based websites.</p>
                     <div class="tech-stack">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">CSS</span>
-                        <span class="tech-tag">API Integration</span>
+                        <span class="tech-tag">HTML/JS</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">WordPress</span>
+                        <span class="tech-tag">GitHub</span>
                     </div>
                     <div class="project-links">
-                        <a href="#">View Project →</a>
+                        <a href="projects/internship-projects.html">View Project →</a>
                     </div>
                 </div>
             </div>
@@ -446,59 +450,55 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
+    <section id="skills" class="container">
         <h2>Skills & Technologies</h2>
         <div class="skills-grid">
             <div class="skill-category">
                 <h3>Frontend</h3>
                 <ul>
                     <li>HTML5 & CSS3</li>
+                    <li>Tailwind CSS</li>
                     <li>JavaScript (ES6+)</li>
-                    <li>React.js / Vue.js</li>
                     <li>Responsive Design</li>
-                    <li>Bootstrap / Tailwind</li>
+                    <li>WordPress Development</li>
+                    <li>SEO / Performance</li>
                 </ul>
             </div>
             <div class="skill-category">
                 <h3>Backend</h3>
                 <ul>
                     <li>Java / JSP</li>
-                    <li>Node.js</li>
-                    <li>RESTful APIs</li>
+                    <li>PHP</li>
                     <li>Database (MySQL)</li>
-                    <li>JPA / Hibernate</li>
                 </ul>
             </div>
             <div class="skill-category">
                 <h3>Tools & Others</h3>
                 <ul>
                     <li>Git & GitHub</li>
-                    <li>VS Code / NetBeans</li>
-                    <li>Figma / Adobe XD</li>
+                    <li>VS Code</li>
+                    <li>Adobe XD</li>
                     <li>Agile / Scrum</li>
-                    <li>Mobile Development</li>
+                    <li>SiteGround</li>
+                    <li>Termius</li>
                 </ul>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="container">
         <div class="contact">
             <h2>Let's Work Together</h2>
             <p>I'm currently looking for frontend developer opportunities</p>
             <div class="contact-info">
                 <div class="contact-item">
                     <span>📧</span>
-                    <a href="mailto:your.email@example.com">your.email@example.com</a>
+                    <a href="mailto:wanqi5160@gmail.com">wanqi5160@gmail.com</a>
                 </div>
                 <div class="contact-item">
-                    <span>💼</span>
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-                </div>
-                <div class="contact-item">
-                    <span>💻</span>
-                    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                    <span>📞</span>
+                    <a href="tel:+601111812069" target="_blank">+601111812069</a>
                 </div>
             </div>
         </div>
@@ -506,9 +506,8 @@
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 Your Name. Built with passion and code ❤️</p>
+        <p>© 2025 Chia Wan Chee</p>
     </footer>
 
 </body>
 </html>
-
