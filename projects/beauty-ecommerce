@@ -131,7 +131,7 @@
     <h3>User Profile</h3>
     <p>Users can <b>view and update</b> their personal information, change their password, and securely log out of their account.</p>
     <video class="project-video" controls>
-        <source src="../videos/loginnregister-demo.mp4" type="video/mp4">
+        <source src="../videos/myaccount-demo.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </section>
